@@ -28,6 +28,7 @@ public class UI
         Console.WriteLine("[A]lterar Descrição da Tarefa");
         Console.WriteLine("[C]oncluir Tarefa");
         Console.WriteLine("[E]xcluir Tarefa");
+        Console.WriteLine("C[r]éditos");
         Console.WriteLine("[S]air");
         Console.Write("\nDigite a sua opção: ");
 
@@ -50,5 +51,14 @@ public class UI
     {
         Console.Write("Digite a Descrição desejada: ");
         return (Console.ReadLine() ?? "").Trim();
+    }
+
+    public static void ExibeCreditos()
+    {
+        ExibeDestaque(@"
+   ~-_   Feito por:
+  _-~          Ermogenes Palacio
+c|_|           (com muito café)
+");
     }
 }
